@@ -1,0 +1,8 @@
+OPT_IMPORT,interpolatevs30
+OPT_VS30GRIDFILEFMT,csv
+OPT_VS30GRIDFILE,/home/worker/model/model_data/OasisRed/redcat/vs30_nosea.txt
+OPT_GRIDFILEFMT,grd
+OPT_GRIDFILE,./work/portfolio.grd
+OPT_OUTDIR,./work
+OPT_OUTPUTFILE,soil.vs30
+OPT_VERBOSE,1

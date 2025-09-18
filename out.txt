@@ -1,0 +1,57 @@
+Warning: Unknown options(s) set in MDK config:
+   model_data_dir : model_data/PiWind
+   analysis_settings_json : analysis_settings.json
+   modelpy : True
+   ktools_alloc_rule_gul : 1
+   gulpy : True
+
+Stating oasislmf command - GenerateOasisFiles
+RUNNING: oasislmf.manager.interface
+
+Processing arguments - Creating Oasis Files
+
+Generating Oasis files (GUL=True, IL=True, RIL=False)
+RUNNING: oasislmf.lookup.factory.generate_key_files
+COMPLETED: oasislmf.lookup.factory.generate_key_files in 0.16s
+
+Keys successful: /home/omer/GitHub/OasisRed/runs/files-20221128144103/keys.csv generated with 72 items
+Keys errors: /home/omer/GitHub/OasisRed/runs/files-20221128144103/keys-errors.csv generated with 0 items
+RUNNING: oasislmf.preparation.gul_inputs.get_gul_input_items
+COMPLETED: oasislmf.preparation.gul_inputs.get_gul_input_items in 0.04s
+RUNNING: oasislmf.preparation.summaries.write_exposure_summary
+RUNNING: oasislmf.preparation.summaries.get_exposure_summary
+RUNNING: oasislmf.preparation.summaries.get_exposure_totals
+COMPLETED: oasislmf.preparation.summaries.get_exposure_summary in 0.05s
+COMPLETED: oasislmf.preparation.summaries.write_exposure_summary in 0.11s
+RUNNING: oasislmf.preparation.summaries.write_summary_levels
+COMPLETED: oasislmf.preparation.summaries.write_summary_levels in 0.07s
+RUNNING: oasislmf.preparation.gul_inputs.write_gul_input_files
+RUNNING: oasislmf.preparation.gul_inputs.write_items_file
+RUNNING: oasislmf.preparation.gul_inputs.write_coverages_file
+COMPLETED: oasislmf.preparation.gul_inputs.write_gul_input_files in 0.04s
+RUNNING: oasislmf.preparation.summaries.get_summary_mapping
+RUNNING: oasislmf.preparation.summaries.write_mapping_file
+RUNNING: oasislmf.preparation.il_inputs.get_il_input_items
+COMPLETED: oasislmf.preparation.il_inputs.get_il_input_items in 0.35s
+RUNNING: oasislmf.preparation.il_inputs.write_il_input_files
+RUNNING: oasislmf.preparation.il_inputs.write_fm_policytc_file
+RUNNING: oasislmf.preparation.il_inputs.write_fm_profile_file
+RUNNING: oasislmf.preparation.il_inputs.write_fm_programme_file
+RUNNING: oasislmf.preparation.il_inputs.write_fm_xref_file
+COMPLETED: oasislmf.preparation.il_inputs.write_fm_xref_file in 0.01s
+COMPLETED: oasislmf.preparation.il_inputs.write_il_input_files in 0.29s
+RUNNING: oasislmf.preparation.summaries.get_summary_mapping
+COMPLETED: oasislmf.preparation.summaries.get_summary_mapping in 0.02s
+RUNNING: oasislmf.preparation.summaries.write_mapping_file
+
+Oasis files generated: {
+    "items": "/home/omer/GitHub/OasisRed/runs/files-20221128144103/items.csv",
+    "coverages": "/home/omer/GitHub/OasisRed/runs/files-20221128144103/coverages.csv",
+    "fm_policytc": "/home/omer/GitHub/OasisRed/runs/files-20221128144103/fm_policytc.csv",
+    "fm_profile": "/home/omer/GitHub/OasisRed/runs/files-20221128144103/fm_profile.csv",
+    "fm_programme": "/home/omer/GitHub/OasisRed/runs/files-20221128144103/fm_programme.csv",
+    "fm_xref": "/home/omer/GitHub/OasisRed/runs/files-20221128144103/fm_xref.csv"
+}
+
+Generate Files completed successfully in /home/omer/GitHub/OasisRed/runs/files-20221128144103
+COMPLETED: oasislmf.manager.interface in 1.72s

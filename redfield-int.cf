@@ -1,0 +1,7 @@
+OPT_INTERPOLATE, true
+OPT_RANDOMDATAFILE,work/random-fields.rfd
+OPT_GRIDFILE,work/portfolio.grd
+OPT_OUTPUTFILE,work/random-fields-int.rfd
+OPT_GRIDFILEFMT,bin
+OPT_VERBOSE,0
+OPT_TERMINAL,true

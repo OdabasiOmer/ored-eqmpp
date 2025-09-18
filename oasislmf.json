@@ -1,0 +1,16 @@
+{
+    "analysis_settings_json": "analysis_settings.json",
+    "lookup_config_json": "keys_data/OasisRed/lookup_config.json",
+    "lookup_data_dir": "keys_data/OasisRed",
+    "model_data_dir": "model_data/OasisRed",
+    "model_settings_json": "meta-data/model_settings.json",
+    "oed_location_csv": "tests/inputs/unit_tests/insurance/acc1/location.csv",
+    "oed_accounts_csv": "tests/inputs/unit_tests/insurance/acc1/account.csv",
+    "modelpy": false,
+    "gulpy": false,
+	"fmpy": true,
+    "ktools_alloc_rule_gul": 2,
+	"ktools_num_processes": 2,
+	"ktools_fifo_relative": true,
+	"verbose": true
+}

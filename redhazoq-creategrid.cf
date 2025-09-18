@@ -1,0 +1,6 @@
+OPT_QUERYGRIDFILE,./work/grid.csv
+OPT_OUTDIR,./work
+OPT_CONVERTBINARY,true
+OPT_QUERYGRIDFILE,./work/grid.csv
+OPT_OUTDIR,./work
+OPT_CONVERTBINARY,true
