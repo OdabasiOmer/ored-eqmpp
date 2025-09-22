@@ -1,44 +1,49 @@
 
-![image](../img/eqm-decorstrip2.png)
+![image](../img/eqmpp-decorstrip2.png)
+
 # 1 Key Specifications
 
-For the full technical specifications, check out on `redserver`:
+**EQM++** extends the EQM+ framework by implementing a **conditional ETAS approach**, enabling **medium-term, dynamic risk estimates** anchored on recent seismic activity.  
+* [**EQM**](https://github.com/OdabasiOmer/Ored/tree/main): mainshock-only, memory-less (Poissonian).  
+* [**EQM+**](https://github.com/OdabasiOmer/ored-eqmp): mainshocks + aftershocks via **unconditional ETAS**.  
+* **EQM++**: conditional ETAS triggered by recent observed events, producing **dynamic medium-term risk estimates**.
 
-```
-P:\RED--EU-EQ-Model-Update-2023\07_reports_and_presentations\06 - Technical Documentation\model\r2
-```
-a copy of which can also be accessed [here](https://cloud.redrisk.com/nextcloud/index.php/s/mzNnBp2QHMbjbC6). 
+<p align="center">
+  <img src="../img/RED-offerings.png">
+</p>
 
-In short,
-* 30,000-year stochastic catalog of 952,000 events, consistent with the 2020 European Seismic Hazard Model [ESHM20](http://www.hazard.efehr.org/en/Documentation/specific-hazard-models/europe/eshm2020-overview/).
-* Ground shaking only
-* Explicit treatment and propagation of epistemic and aleatory uncertainties
-including primary and secondary uncertainties.
-* Explicit modeling of spatially correlated ground motion intensity fields for every event during sampling.
+In short:  
+* **Catalogue**: Year-specific stochastic catalogs incorporating observed mainshocks and their simulated aftershocks (minimum magnitude M4.6).  
+* **Time scale:** Focuses on **conditional, medium-term risk** (yearly updates).  
+* **Geographic coverage:** Italy (other countries pending).  
+* **Occurrence model:** Mainshocks observed from INGV, aftershocks generated with ETAS conditioned on recent events.  
+* **Ground motion:** Five Sa ordinates (T=0.2, 0.3, 0.5, 0.75, 1.0s).  
+* **Uncertainties:** Epistemic + aleatory (spatial correlation included).  
 
-![image](../img/hazmap-sa02-rp475.png)
-
+<p align="center">
+  <img src="../img/hazmap-sa02-rp475.png" width="500">
+</p>
 
 # 2. Core modelling decisions and assumptions 
-### Ground motion sampling
-Depending on choice, legacy REDLoss allowed for ground motion sampling by either using the total sigma, or between- and within-event sigmas.
-... NS
-
-### Spatial correlation
-How it currently works...
-NS
-
-> (TODO-OO) Future direction:
-
-### (SES) Paramer calibration
-* Parameter calibration is normally country specific. We decided to use Italy params to generate SES for also other countries.
-
-### Zonation (regions - old approach) during event set generation
-... NS
-
-### Sampling from logic tree
-... NS
-
-### 
+### 2.1 Occurence Process
+* **Underlying model**: ETAS (space–time Hawkes process).  
+* **Modification in EQM++**:  
+  - Uses the EQM mainshock catalog as the background (unconditional) events.  
+  - Aftershocks are generated conditionally:the year-of-interest catalog includes EQM mainshocks and the aftershocks they trigger (unconditional). In addition, aftershocks triggered by observed earthquakes from prior years are simulated
+* **Result**: EQM++ dynamically updates risk estimates based on the previous year’s seismicity.
 
 
+### 2.2 Event Set Generation
+
+EQM++ generates **conditional earthquake catalogs** combining two components:  
+
+1. **Unconditional events** – Mainshocks from the EQM catalog for the year of interest and the aftershocks they trigger within the same year.  
+2. **Conditional events** – Aftershocks triggered by earthquakes that occurred **before the start of the year of interest**, which can produce additional events in the year of interest. These events are downloaded from the [INGV website](https://shakemap.ingv.it/).
+
+Together, these components produce a stochastic catalog reflecting both the natural variability of seismic sequences in the year of interest and the influence of prior seismicity.  
+
+For implementation details, see the corresponding [codebase](https://bitbucket.org/red-eq/ses-tools/src/main/aftershock-simulator/).
+
+### 2.3 Ground motion characterization
+
+Identical to the framework we have in [**EQM+**](https://github.com/OdabasiOmer/ored-eqmp).
