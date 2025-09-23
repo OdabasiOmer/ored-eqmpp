@@ -2,7 +2,7 @@
     "model_settings":{
         "event_set":{
             "name": "EQM++ Medium-Term Stochastic Catalog",
-            "desc": "30,000-year stochastic catalog with sequences for period 2025.",
+            "desc": "30,000-year stochastic catalog with sequences for period spanning Jan 01, 2004 - Jan 01 2005.",
             "default": "p",
             "options":[
                 {"id":"p", "desc": "Probabilistic", "number_of_events": 999999}
