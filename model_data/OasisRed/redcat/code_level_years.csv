@@ -1,0 +1,44 @@
+Country,Name,Year1,Year2
+AL,Albania,1995,2011
+AT,Austria,1955,1997
+BE,Belgium,2005,0
+BA,Bosnia,1964,2008
+BG,Bulgaria,1949,2007
+HR,Croatia,1964,2008
+CY,Cyprus,1986,2007
+CZ,Czech Republic,1973,2010
+DK,Denmark,0,0
+EE,Estonia,0,0
+FI,Finland,0,0
+FR,France,1962,2003
+DE,Germany,1971,2005
+GR,Greece,1959,2000
+HU,Hungary,1972,2003
+IS,Iceland,1934,2000
+IE,Ireland,2006,0
+IT,Italy,1974,2003
+LV,Latvia,1998,0
+LT,Lithuania,2011,0
+LU,Luxembourg,2011,0
+MK,Macedonia,2004,0
+MT,Malta,2007,0
+MD,Moldova,1949,2007
+ME,Montenegro,1981,2010
+NL,Netherlands,2005,0
+NO,Norway,2004,0
+PL,Poland,0,0
+PT,Portugal,1960,1983
+RO,Romania,1963,2006
+RS,Serbia,1964,0
+SK,Slovakia,1975,1999
+SI,Slovenia,1964,2008
+ES,Spain,1962,2002
+SE,Sweden,2010,0
+CH,Switzerland,1970,2004
+TR,Turkey,1960,1997
+GB,United Kingdom,2006,0
+VA,Vatican City,1974,2003
+MC,Monaco,1962,2003
+AD,Andora,1962,2002
+SM,San Martino,1974,2003
+LI,Liechtenstein,1970,2004

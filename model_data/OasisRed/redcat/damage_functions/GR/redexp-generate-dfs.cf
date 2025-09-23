@@ -1,0 +1,7 @@
+OPT_IMPORT,dfunctions
+OPT_GRIDFILEFMT,eu
+OPT_DATAFILE,.\\config\\DFclasses_Ind.txt
+OPT_DATAFILELIST,.\config\dfList_Greece.txt
+OPT_OUTDIR,p:\RED--EU-EQ-Model-Update-2023\04_model\vulnerability\vulnerability-model-development-toolkit\this-model\bin\r33\GR
+OPT_OUTPUTFILE,df_TR_CovA_TRP.dfs
+OPT_VERBOSE,0
