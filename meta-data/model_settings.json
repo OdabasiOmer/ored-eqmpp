@@ -1,0 +1,27 @@
+{
+    "model_settings":{
+        "event_set":{
+            "name": "EQM++ Medium-Term Stochastic Catalog",
+            "desc": "30,000-year stochastic catalog with sequences for period 2025.",
+            "default": "p",
+            "options":[
+                {"id":"p", "desc": "Probabilistic", "number_of_events": 999999}
+            ]
+         },
+        "event_occurrence_id":{
+            "name": "Occurrence Set",
+            "desc": "30k Stochastic Catalog",
+            "default": "lt",
+            "options":[
+                {"id":"lt", "desc": "Long Term"}
+            ]
+        }
+     },
+    "lookup_settings":{
+        "supported_perils":[
+           {"id": "QEQ", "desc": "Single Peril: Earthquake"}
+        ]
+    },
+    "data_settings": {},
+    "model_default_samples" :5
+}

@@ -1,0 +1,13 @@
+{
+    "lookup_config_json": "keys_data/OasisRed/lookup.json",
+    "lookup_data_dir": "keys_data/OasisRed",
+    "model_data_dir": "model_data/OasisRed",
+    "model_settings_json": "meta-data/model_settings.json",
+    "exposure_pre_analysis_module": "src/exposure_modification/exposure_pre_analysis_example.py",
+    "exposure_pre_analysis_setting_json": "tests/inputs/exposure_pre_analysis.json",
+    "oed_location_csv": "tests/inputs/SourceLocOEDOasisRed10.csv",
+    "oed_accounts_csv": "tests/inputs/SourceAccOEDOasisRed.csv",
+    "oed_info_csv": "tests/inputs/SourceReinsInfoOEDOasisRed.csv",
+    "oed_scope_csv": "tests/inputs/SourceReinsScopeOEDOasisRed.csv",
+    "ktools_alloc_rule_gul": 1
+}

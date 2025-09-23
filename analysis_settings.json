@@ -1,7 +1,7 @@
 {
     "analysis_tag": "Default",
     "source_tag": "MDK",
-    "model_name_id": "EQM",
+    "model_name_id": "EQM++",
     "model_supplier_id": "RED",
     "gul_threshold": 0,
     "gul_output": true,
