@@ -12,6 +12,13 @@
   <img src="../img/RED-offerings.png">
 </p>
 
+For the full technical specifications, check out on `redserver`:
+
+```
+P:\RED--EU-EQ-Model-Update-2023\07_reports_and_presentations\06 - Technical Documentation\model\r2\appendix\EQM++v1.pdf
+```
+a copy of which can also be accessed [here](https://cloud.redrisk.com/nextcloud/index.php/s/iFxQNQGJHcj3fa7?dir=undefined&path=%2Fdoc-technical&openfile=2108053). 
+
 In short:  
 * **Catalogue**: Year-specific stochastic catalogs incorporating observed mainshocks and their simulated aftershocks (minimum magnitude M4.6).  
 * **Time scale:** Focuses on **conditional, medium-term risk** (yearly updates).  
